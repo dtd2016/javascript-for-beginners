@@ -1,0 +1,25 @@
+.top {
+  width: 50px;
+  height: 35vh;
+}
+
+.clock-and-greeting {
+  height: 20vh;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock {
+  font-size: 120px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+#greeting {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 10px;
+}

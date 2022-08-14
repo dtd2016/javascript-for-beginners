@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+
+@import "reset.css";
+@import "clock-and-greeting.css";
+@import "form.css";
+@import "todo-list.css";
+@import "quote.css";
+@import "weather.css";
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .hidden {
   display: none;
 }

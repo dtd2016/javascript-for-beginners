@@ -11,10 +11,21 @@ function onLoginSubmit(event) {
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
+  visibleToDo();
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `Hello ${username}`;
+  const date = new Date();
+  const hours = date.getHours();
+
+  if (hours < 6 || hours >= 18) {
+    greeting.innerText = `Good evening, ${username}.`;
+  } else if (hours < 12) {
+    greeting.innerText = `Good morning, ${username}.`;
+  } else {
+    greeting.innerText = `Good afternoon, ${username}.`;
+  }
+
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 

@@ -1,0 +1,25 @@
+.form {
+  height: 35vh;
+  margin-bottom: 70px;
+}
+
+#todo-form {
+  margin: 10px;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  background: transparent;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}

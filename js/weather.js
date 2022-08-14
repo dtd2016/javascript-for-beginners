@@ -17,7 +17,7 @@ function onGeoSuccess(position) {
 }
 
 function onGeoError() {
-  alert("Can't find you. Please approve the access to location.");
+  alert("Can't find you. Please approve access to location.");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);

@@ -1,3 +1,1 @@
 # Vanilla JS
-
-Learning vanilla js...
